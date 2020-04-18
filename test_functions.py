@@ -138,8 +138,9 @@ def test_f2():
     :return:
     """
     result = f(temp_names, 10)
-    count = result.count('Jacob')
+    count = result.count('Robert')
     try:
-        assert int(input('Угадай, сколько раз имя содержится в списке: ')) == count
+        assert int(input('Угадай, сколько раз имя содержится в списке от 1 до 20: ')) == count
+        print('Ты угадал!')
     except AssertionError:
-        print('Ты не угадал')
+        print('Ты не угадал, их было ' + str(count))
